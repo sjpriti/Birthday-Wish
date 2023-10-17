@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Happy Birthday Surprise</title>
+    <style>
+        body {
+            
+            background-color: #f14d4d;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .gift-box {
+            width: 200px;
+            cursor: pointer;
+        }
+        .hidden {
+            display: none;
+            
+        }
+    </style>
+    <style>
+        h1 {
+            font-size: 70px; 
+            font-family: "Comic Sans MS";
+            color: #fcfaf9; 
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="tapToOpen">
+        <img class="gift-box" src="https://cdn-icons-png.flaticon.com/512/3702/3702999.png" alt="Gift Box" onclick="openGift()">
+        <p>Open the Gift Box</p>
+    </div>
+
+    <div id="giftContents" class="hidden">
+        <h1>Happy Birthday Chinnoh Mohammad Sadman Sakib!</h1>
+    </div>
+
+    <script>
+        function openGift() {
+            const tapToOpen = document.getElementById('tapToOpen');
+            const giftContents = document.getElementById('giftContents');
+            tapToOpen.style.display = 'none';
+            giftContents.style.display = 'block';
+            document.body.style.backgroundImage = "url('https://goatdepotbd.com/wp-content/uploads/2023/06/Goat-707-3.jpg')";
+            document.body.style.backgroundPosition = "center";
+            document.body.style.backgroundSize = "cover";
+        }
+    </script>
+</body>
+</html>
